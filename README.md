@@ -25,8 +25,8 @@ The goal is to demonstrate:
 - **API Security** — REST and WebSocket endpoint testing, authentication enforcement, parameter validation
 - **Multi-Tenant Security** — Tenant isolation, cross-tenant data leakage, identity boundary enforcement
 - **SQL Injection** — Detection, controlled exploitation for impact assessment, privilege analysis
-- **Access Control** — IDOR / broken object-level authorization, sequential identifier enumeration
-- **Financial System Security** — Payment initiation controls, transaction authorization, mobile money integration security
+- **Access Control** — IDOR / broken object-level authorization, predictable identifier enumeration
+- **Financial System Security** — Payment and transaction authorization, financial workflow security
 - **Session Security** — Token predictability, session binding, cross-session exploitation
 - **Cryptographic Key Management** — Detection of exposed signing keys, credential storage assessment
 - **Client-Side Security** — Credential exposure in JavaScript, client-side filtering bypass
@@ -35,8 +35,8 @@ The goal is to demonstrate:
 
 | # | Case Study | Platform Type | Key Findings |
 |---|-----------|---------------|--------------|
-| 1 | [Online Gaming Platform](case-studies/anonymous-gaming-platform-assessment.md) | Multi-tenant gaming / betting platform | SQL injection (CVSS 9.8), predictable session tokens, exposed government signing keys, cross-tenant data leakage, plaintext passwords |
-| 2 | [Payment Platform](case-studies/anonymous-payment-platform-assessment.md) | Mobile money payment platform | Unauthenticated payment initiation (CVSS 9.9), multiple IDOR vulnerabilities, KYC data exposure, client-side credential exposure |
+| 1 | [Multi-Tenant Application Platform](case-studies/anonymous-multitenant-platform-assessment.md) | Multi-tenant application platform | Critical SQL injection, predictable session tokens, exposed cryptographic keys, cross-tenant data leakage, insecure credential storage |
+| 2 | [Online Payment Platform](case-studies/anonymous-payment-platform-assessment.md) | Online payment platform | Critical authentication failures on financial endpoints, multiple IDOR vulnerabilities, sensitive data exposure, client-side credential exposure |
 
 ## Methodology
 
@@ -73,7 +73,7 @@ All research was reported to the affected organizations through coordinated / re
 >
 > **No information in this repository should be used for unauthorized access to any system.** The case studies are published for educational and professional reference purposes only.
 >
-> **CVSS scores in these case studies are reproduced from the original reports** and were computed from their CVSS 3.1 vectors. They are not independently assigned by any third-party authority and no CVE identifiers exist for these findings.
+> **CVSS scores referenced in the original reports** were computed from their CVSS 3.1 vectors. They are not independently assigned by any third-party authority and no CVE identifiers exist for these findings.
 
 ## Contact
 
