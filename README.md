@@ -2,9 +2,14 @@
 
 Independent security research case studies, anonymized for public reference.
 
-## Purpose
+## About
 
 This repository presents selected findings from independent security research conducted against production web applications and APIs. Each case study has been thoroughly anonymized to protect the identity of the assessed organizations while preserving the technical substance of the work.
+
+**Researcher:** Yahya Ganbarli
+- [GitHub](https://github.com/Yehyaqenberli)
+
+## Purpose
 
 The goal is to demonstrate:
 
@@ -30,14 +35,14 @@ The goal is to demonstrate:
 
 | # | Case Study | Platform Type | Key Findings |
 |---|-----------|---------------|--------------|
-| 1 | [Online Gaming Platform](case-studies/gaming-platform-security-research.md) | Multi-tenant gaming / betting platform | SQL injection (CVSS 9.8), predictable session tokens, exposed government signing keys, cross-tenant data leakage, plaintext passwords |
-| 2 | [Payment Platform](case-studies/payment-platform-security-assessment.md) | Mobile money payment platform | Unauthenticated payment initiation, multiple IDOR vulnerabilities, KYC data exposure, client-side credential exposure |
+| 1 | [Online Gaming Platform](case-studies/anonymous-gaming-platform-assessment.md) | Multi-tenant gaming / betting platform | SQL injection (CVSS 9.8), predictable session tokens, exposed government signing keys, cross-tenant data leakage, plaintext passwords |
+| 2 | [Payment Platform](case-studies/anonymous-payment-platform-assessment.md) | Mobile money payment platform | Unauthenticated payment initiation (CVSS 9.9), multiple IDOR vulnerabilities, KYC data exposure, client-side credential exposure |
 
 ## Methodology
 
 Detailed methodology documentation:
 
-- [Web & API Security Testing](methodology/web-api-testing.md) — Endpoint discovery, authentication testing, input validation, session analysis, multi-tenant testing
+- [Web & API Security Testing](methodology/web-api-security-testing.md) — Endpoint discovery, authentication testing, input validation, session analysis, multi-tenant testing
 - [Authorization Testing](methodology/authorization-testing.md) — Authentication presence, IDOR, tenant isolation, session management, financial authorization
 - [Responsible Disclosure](methodology/responsible-disclosure.md) — Disclosure principles, timeline standards, public disclosure guidelines
 
