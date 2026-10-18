@@ -6,8 +6,9 @@ Independent security research case studies, anonymized for public reference.
 
 This repository presents selected findings from independent security research conducted against production web applications and APIs. Each case study has been thoroughly anonymized to protect the identity of the assessed organizations while preserving the technical substance of the work.
 
-**Researcher:** Yahya Ganbarli
-- [GitHub](https://github.com/Yehyaqenberli)
+**Researcher:** Yahya Ganbarli  
+**Contact / Verification Email:** yahya.qemberov@gmail.com  
+**Disclosures:** Coordinated vulnerability research 
 
 ## Purpose
 
